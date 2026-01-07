@@ -15,7 +15,7 @@ while returning the number of characters printed.
 Finally, it’s also able to combine those options in one line through the use of multiple % in the first string, paired with the right arguments.
 
 ##INSTRUCTIONS :
-To obtain the library containing the ft_printf fonction, it is enough to execute the “make all” or “make libftprintf.a” command in the terminal in the folder containing the makefile. Once the library is obtained, it can be compiled alongside a .c file to allow the use of the function in it.
+To obtain the library containing the ft_printf function, it is enough to execute the “make all” or “make libftprintf.a” command in the terminal in the folder containing the makefile. Once the library is obtained, it can be compiled alongside a .c file to allow the use of the function in it.
 The temporary files thus created can be removed using either “make clean” or “make fclean”, depending on whether you also want to erase the library.
 Finally, the “make re” command can be used to remove the library and the leftovers temporary files before recreating them.
 
