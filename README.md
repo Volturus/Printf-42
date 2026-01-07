@@ -1,8 +1,8 @@
 ﻿*This project has been created as part of the 42 curriculum by vmourey.*
 
-#PRINTF
+# PRINTF
 
-##DESCRIPTION :
+## DESCRIPTION :
 This project has for goal to recreate most of the basic capabilities from the printf function, found in the <stdio.h> library. 
 To be more precise, the ft_printf function is able to print to the standard stream :
 - a single character using %c.
@@ -14,16 +14,16 @@ To be more precise, the ft_printf function is able to print to the standard stre
 while returning the number of characters printed.
 Finally, it’s also able to combine those options in one line through the use of multiple % in the first string, paired with the right arguments.
 
-##INSTRUCTIONS :
+## INSTRUCTIONS :
 To obtain the library containing the ft_printf function, it is enough to execute the “make all” or “make libftprintf.a” command in the terminal in the folder containing the makefile. Once the library is obtained, it can be compiled alongside a .c file to allow the use of the function in it.
 The temporary files thus created can be removed using either “make clean” or “make fclean”, depending on whether you also want to erase the library.
 Finally, the “make re” command can be used to remove the library and the leftovers temporary files before recreating them.
 
-##RESOURCES:
+## RESOURCES:
 After the majority of the code had already been produced, I consulted the following reference to make sure I didn’t make a mistake.
 - https://42-cursus.gitbook.io/guide/1-rank-01/ft_printf
 
-##ALGORITHM:
+## ALGORITHM:
 To create this function, I decided to go through the first argument, a string, one character at a time, printing said character using write, with the exception of the ‘%’ characters.
 When finding one of those, it is required to check the following character in order to determine the nature what will need to be printed and thus the helper function(s) to use. Afterwards, we apply the needed transformation to the corresponding argument (the first % is paired with the second argument, the second % with the third argument, etc.., unless we have a %%, in which case no argument are used).
 For %s, %c and %%, we only have to use to use a write to print the needed characters.
