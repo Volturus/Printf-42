@@ -19,7 +19,7 @@ To obtain the library containing the ft_printf fonction, it is enough to execute
 The temporary files thus created can be removed using either “make clean” or “make fclean”, depending on whether you also want to erase the library.
 Finally, the “make re” command can be used to remove the library and the leftovers temporary files before recreating them.
 
-##RESSOURCES:
+##RESOURCES:
 After the majority of the code had already been produced, I consulted the following reference to make sure I didn’t make a mistake.
 - https://42-cursus.gitbook.io/guide/1-rank-01/ft_printf
 
